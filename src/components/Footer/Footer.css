@@ -1,0 +1,23 @@
+.footer {
+    align-items: center;
+    display: flex;
+    font-size: var(--size-14);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: var(--size-48);
+}
+
+.footer__left, .footer__right {
+    padding-top: var(--size-14);
+}
+
+.footer__watermark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    width: var(--size-14);
+    margin-right: var(--size-4);
+}

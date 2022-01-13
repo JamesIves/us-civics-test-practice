@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Questionaire from "./components/Questionaire/Questionaire";
+import "./App.css";
+import Navigation from "./components/Navigation/Navigation";
+import { questions } from "./util/survey";
+import Footer from "./components/Footer/Footer";
 
-function App() {
+const App = () => {
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [incorrectAnswers, setIncorrectAnswers] = useState(0);
+  const [remainingQuestions, setRemainingQuestions] = useState(questions.length);
+
+  const handleAnswerTally = (
+    isCorrect: boolean,
+    remainingQuestions: number
+  ) => {
+    if (isCorrect) {
+      setCorrectAnswers(correctAnswers + 1);
+    } else {
+      setIncorrectAnswers(incorrectAnswers + 1);
+    }
+
+    setRemainingQuestions(remainingQuestions);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navigation
+
+        correctAnswers={correctAnswers}
+        incorrectAnswers={incorrectAnswers}
+        remainingQuestions={remainingQuestions}
+      />
+      <main className="container">
+        <Questionaire
+          handleAnswerTally={handleAnswerTally}
+          correctAnswers={correctAnswers}
+          incorrectAnswers={incorrectAnswers}
+        />
+      </main>
+
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
