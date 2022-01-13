@@ -13,7 +13,7 @@ const Footer = () => (
         >
           2022 Civics test documentation
         </a>
-        . This page is in no way affiliated with the United States goverment.
+        . This page is in no way affiliated with the United States goverment.           <a href="https://jives.dev/us-civics-test-practice">Restart Test?</a>
       </span>
     </div>
 

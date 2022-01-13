@@ -11,6 +11,10 @@
     padding-top: var(--size-14);
 }
 
+.footer__left {
+    max-width: 70%;
+}
+
 .footer__watermark {
     display: flex;
     align-items: center;

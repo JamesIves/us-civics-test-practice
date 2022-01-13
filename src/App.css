@@ -126,10 +126,3 @@ a {
 .results ul {
     padding-left: 20px;
 }
-
-.restart {
-    font-size: var(--size-14);
-    display: block;
-    padding-top: var(--size-18);
-    text-align: center;
-}

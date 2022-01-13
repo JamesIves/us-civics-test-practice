@@ -101,8 +101,6 @@ const Questionaire = ({
               </div>
             )}
           </section>
-
-          <a className="restart" href="https://jives.dev/us-civics-test-practice">Restart Test?</a>
         </section>
       )}
 
