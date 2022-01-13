@@ -10,7 +10,7 @@ jobs:
           node-version: '16.13.2'
 
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.5.1
+        uses: actions/checkout@v2
 
       - name: Install Yarn
         run: npm install -g yarn
