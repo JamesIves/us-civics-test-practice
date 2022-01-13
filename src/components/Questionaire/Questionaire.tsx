@@ -55,7 +55,8 @@ const Questionaire = ({
             The following quiz will test your knowledge on the United States
             Civics test. There are no multiple choice prompts, and much like the
             actual naturalization interview you'll be expected to answer these
-            from memory.
+            from memory. Please keep in mind that this test may not include every possible question and answer that
+            you may encounter in the actual Civics test.
           </p>
           <p>
               Once you read the question, answer it aloud and then click "Reveal

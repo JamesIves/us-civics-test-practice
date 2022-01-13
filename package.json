@@ -3,6 +3,7 @@
   "author": "James Ives <iam@jamesiv.es> (https://jamesiv.es)",
   "description": "Questionaire application for those studying for the US Civics test as part of the naturalization process",
   "version": "1.0.0",
+  "homepage": "https://jives.dev/us-civics-test-practice",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "5.16.1",
