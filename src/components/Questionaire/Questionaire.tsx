@@ -102,7 +102,7 @@ const Questionaire = ({
             )}
           </section>
 
-          <a className="restart" href="/">Restart Test?</a>
+          <a className="restart" href="https://jives.dev/us-civics-test-practice">Restart Test?</a>
         </section>
       )}
 
@@ -151,7 +151,7 @@ const Questionaire = ({
             <YouTube videoId="RDrfE9I8_hs" containerClassName="video-player" />
           )}
 
-          <a className="button button--large" href="/">
+          <a className="button button--large" href="https://jives.dev/us-civics-test-practice">
             Start Again
           </a>
         </section>
