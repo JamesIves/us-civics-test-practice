@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { questions } from "../../util/survey";
-import Question from "./Question/Question";
-import YouTube from "react-youtube";
-import { QuestionType } from "../../util/constants";
-import Check from "../icons/Check/Check";
-import Cross from "../icons/Cross/Cross";
+import React, { useState } from 'react';
+import { questions } from '../../util/survey';
+import Question from './Question/Question';
+import YouTube from 'react-youtube';
+import { QuestionType } from '../../util/constants';
+import Check from '../icons/Check/Check';
+import Cross from '../icons/Cross/Cross';
 
 const Questionaire = ({
   handleAnswerTally,
@@ -17,12 +17,12 @@ const Questionaire = ({
 }) => {
   // Sets initial state to a random question
   const [index, setIndex] = useState(
-    Math.floor(Math.random() * questions.length)
+    Math.floor(Math.random() * questions.length),
   );
   const [question, setQuestion] = useState(questions[index]);
   const [surveyQuestions, setSurveyQuestions] = useState(questions);
   const [incorrectSurveyQuestions, setIncorrectSurveyQuestions] = useState(
-    [] as QuestionType[]
+    [] as QuestionType[],
   );
   const [showResultsButtons, setShowResultsButtons] = useState(false);
   const [complete, setComplete] = useState(false);
@@ -50,7 +50,7 @@ const Questionaire = ({
     }
 
     const updatedIndex = Math.floor(
-      Math.random() * updatedSurveyQuestions.length
+      Math.random() * updatedSurveyQuestions.length,
     );
     setIndex(updatedIndex);
 
@@ -126,14 +126,14 @@ const Questionaire = ({
         <section className="results">
           <h1>
             {correctAnswers === questions.length
-              ? "Certified American"
+              ? 'Certified American'
               : correctAnswers > questions.length / 2
-              ? "Almost American"
-              : "Less than 50% American"}
+              ? 'Almost American'
+              : 'Less than 50% American'}
           </h1>
           <p>
             You can find a breakdown of your answers below. For official
-            documentation on the United States Civics Test refer to the{" "}
+            documentation on the United States Civics Test refer to the{' '}
             <a
               href="https://www.uscis.gov/sites/default/files/document/questions-and-answers/100q.pdf"
               rel="noopener noreferrer"
@@ -172,7 +172,9 @@ const Questionaire = ({
 
               {incorrectSurveyQuestions.map((item, idx) => (
                 <ul key={idx}>
-                  <li><strong>Question</strong>: {item.question}</li>
+                  <li>
+                    <strong>Question</strong>: {item.question}
+                  </li>
                   <li>
                     <strong>Answers</strong>:
                     <ul>

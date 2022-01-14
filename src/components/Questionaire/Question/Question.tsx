@@ -1,5 +1,5 @@
-import React, { useState, Dispatch, SetStateAction, useEffect } from "react";
-import { QuestionType } from "../../../util/constants";
+import React, { useState, Dispatch, SetStateAction, useEffect } from 'react';
+import { QuestionType } from '../../../util/constants';
 
 const Question = ({
   item,

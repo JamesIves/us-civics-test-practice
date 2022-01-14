@@ -1,10 +1,10 @@
-import React from "react";
-import "./Navigation.css";
-import { questions } from "../../util/survey";
-import AmericanFlag from "../icons/AmericanFlag/AmericanFlag";
-import Check from "../icons/Check/Check";
-import Cross from "../icons/Cross/Cross";
-import QuestionMark from "../icons/QuestionMark/QuestionMark";
+import React from 'react';
+import './Navigation.css';
+import { questions } from '../../util/survey';
+import AmericanFlag from '../icons/AmericanFlag/AmericanFlag';
+import Check from '../icons/Check/Check';
+import Cross from '../icons/Cross/Cross';
+import QuestionMark from '../icons/QuestionMark/QuestionMark';
 
 const Navigation = ({
   correctAnswers,

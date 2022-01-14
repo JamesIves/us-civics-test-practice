@@ -1,4 +1,4 @@
 export type QuestionType = {
-    question: string;
-    answers: string[];
-}
+  question: string;
+  answers: string[];
+};

@@ -1,18 +1,20 @@
-import React, { useState } from "react";
-import Questionaire from "./components/Questionaire/Questionaire";
-import "./App.css";
-import Navigation from "./components/Navigation/Navigation";
-import { questions } from "./util/survey";
-import Footer from "./components/Footer/Footer";
+import React, { useState } from 'react';
+import Questionaire from './components/Questionaire/Questionaire';
+import './App.css';
+import Navigation from './components/Navigation/Navigation';
+import { questions } from './util/survey';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [incorrectAnswers, setIncorrectAnswers] = useState(0);
-  const [remainingQuestions, setRemainingQuestions] = useState(questions.length);
+  const [remainingQuestions, setRemainingQuestions] = useState(
+    questions.length,
+  );
 
   const handleAnswerTally = (
     isCorrect: boolean,
-    remainingQuestions: number
+    remainingQuestions: number,
   ) => {
     if (isCorrect) {
       setCorrectAnswers(correctAnswers + 1);
@@ -26,7 +28,6 @@ const App = () => {
   return (
     <div className="app">
       <Navigation
-
         correctAnswers={correctAnswers}
         incorrectAnswers={incorrectAnswers}
         remainingQuestions={remainingQuestions}
