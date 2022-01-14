@@ -7025,7 +7025,7 @@ react-scripts@5.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react-youtube@^7.14.0:
+react-youtube@7.14.0:
   version "7.14.0"
   resolved "https://registry.yarnpkg.com/react-youtube/-/react-youtube-7.14.0.tgz#0505d86491521ca94ef0afb74af3f7936dc7bc86"
   integrity sha512-SUHZ4F4pd1EHmQu0CV0KSQvAs5KHOT5cfYaq4WLCcDbU8fBo1ouTXaAOIASWbrz8fHwg+G1evfoSIYpV2AwSAg==
@@ -8033,11 +8033,6 @@ tsutils@^3.21.0:
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
-
-twemoji-react@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/twemoji-react/-/twemoji-react-1.0.4.tgz#442cff389a4b7eea120ed16f586c0c36176925ee"
-  integrity sha512-qbvu/fSfUILPNkAp3b/oKfocl+M+PkrcYS6JGJ2xsF4SJRZ7xtZZgQlYy2X1PLMRBQJOGX2IP2qsuLrL9OQ1Tg==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
