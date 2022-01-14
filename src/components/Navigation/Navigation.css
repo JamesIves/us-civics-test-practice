@@ -19,7 +19,6 @@
 }
 
 .navigation li {
-    padding-right: var(--size-18);
     display: flex;
     align-items: center;
     font-size: var(--size-14);
@@ -27,6 +26,10 @@
 
 .navigation__right svg {
     width: var(--size-22);
+}
+
+.navigation__right li {
+    padding-left: var(--size-18);
 }
 
 .navigation__inner {
