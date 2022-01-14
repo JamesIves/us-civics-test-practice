@@ -27,15 +27,18 @@ const Questionaire = ({
   const [showResultsButtons, setShowResultsButtons] = useState(false);
   const [complete, setComplete] = useState(false);
   const [started, setStarted] = useState(false);
+  const [revealedResults, setRevealedResults] = useState(false);
 
   const handleQuestionAnswer = (isCorrect: boolean): void => {
     handleQuestionChange(isCorrect);
-
     handleAnswerTally(isCorrect, surveyQuestions.length - 1);
   };
 
   /* Handles removing answered questions from state. */
   const handleQuestionChange = (isCorrect: boolean) => {
+    setRevealedResults(false);
+    setShowResultsButtons(false);
+
     const updatedSurveyQuestions = [...surveyQuestions];
     const removedQuestion = updatedSurveyQuestions.splice(index, 1);
     setSurveyQuestions(updatedSurveyQuestions);
@@ -59,6 +62,11 @@ const Questionaire = ({
     } else {
       setComplete(true);
     }
+  };
+
+  const handleResultReveal = () => {
+    setRevealedResults(true);
+    setShowResultsButtons(true);
   };
 
   return (
@@ -91,10 +99,15 @@ const Questionaire = ({
 
       {!complete && started && (
         <section>
-          <Question
-            item={question}
-            setShowResultsButtons={setShowResultsButtons}
-          />
+          <Question item={question} revealedResults={revealedResults}>
+            <button
+              className="button button--large"
+              onClick={() => handleResultReveal()}
+              disabled={revealedResults}
+            >
+              Reveal Answer
+            </button>
+          </Question>
 
           <section>
             {showResultsButtons && (

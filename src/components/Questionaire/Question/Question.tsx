@@ -1,37 +1,22 @@
-import React, { useState, Dispatch, SetStateAction, useEffect } from 'react';
+import React, { ReactElement } from 'react';
 import { QuestionType } from '../../../util/constants';
 
 const Question = ({
   item,
-  setShowResultsButtons,
+  children,
+  revealedResults,
 }: {
   item: QuestionType;
-  setShowResultsButtons: Dispatch<SetStateAction<boolean>>;
+  children: ReactElement<any, any>;
+  revealedResults: boolean;
 }) => {
-  const [revealedResults, setRevealedResults] = useState(false);
   const { question, answers } = item;
-
-  useEffect(() => {
-    setRevealedResults(false);
-    setShowResultsButtons(false);
-  }, [item, setShowResultsButtons]);
-
-  const handleResultReveal = () => {
-    setRevealedResults(true);
-    setShowResultsButtons(true);
-  };
 
   return (
     <section>
       <h1>Question: {question}</h1>
 
-      <button
-        className="button button--large"
-        onClick={() => handleResultReveal()}
-        disabled={revealedResults}
-      >
-        Reveal Answer
-      </button>
+      {children}
 
       {revealedResults && (
         <div className="answers">
