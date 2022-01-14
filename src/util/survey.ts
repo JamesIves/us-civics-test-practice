@@ -156,6 +156,7 @@ export const questions: QuestionType[] = [
   {
     question: "What is the name of the President of the United States now?",
     answers: [
+      "Joe Biden (as of January 2022)",
       "Visit uscis.gov/citizenship/testupdates for the name of the President of the United States.",
     ],
   },
@@ -163,6 +164,7 @@ export const questions: QuestionType[] = [
     question:
       "What is the name of the Vice President of the United States now?",
     answers: [
+      "Kamala Harris (as of January 2022)",
       "Visit uscis.gov/citizenship/testupdates for the name of the Vice President of the United States",
     ],
   },
@@ -228,12 +230,14 @@ export const questions: QuestionType[] = [
   {
     question: "How many justices are on the Supreme Court?",
     answers: [
+      "nine (9) (as of January 2022)",
       "Visit uscis.gov/citizenship/testupdates for the number of justices on the Supreme Court.",
     ],
   },
   {
     question: "Who is the Chief Justice of the United States now?",
     answers: [
+      "John G. Roberts, Jr. (as of January 2022)",
       "Visit uscis.gov/citizenship/testupdates for the name of the Chief Justice of the United States.",
     ],
   },
@@ -277,6 +281,7 @@ export const questions: QuestionType[] = [
   {
     question: "What is the political party of the President now?",
     answers: [
+      "Democratic (as of January 2022)",
       "Visit uscis.gov/citizenship/testupdates for the political party of the President",
     ],
   },
@@ -284,6 +289,7 @@ export const questions: QuestionType[] = [
     question:
       "What is the name of the Speaker of the House of Representatives now?",
     answers: [
+      "Nancy Pelosi (as of January 2022)",
       "Visit uscis.gov/citizenship/testupdates for the name of the Speaker of the House of Representatives",
     ],
   },

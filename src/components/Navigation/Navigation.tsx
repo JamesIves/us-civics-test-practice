@@ -1,6 +1,10 @@
 import React from "react";
 import "./Navigation.css";
 import { questions } from "../../util/survey";
+import AmericanFlag from "../icons/AmericanFlag/AmericanFlag";
+import Check from "../icons/Check/Check";
+import Cross from "../icons/Cross/Cross";
+import QuestionMark from "../icons/QuestionMark/QuestionMark";
 
 const Navigation = ({
   correctAnswers,
@@ -15,22 +19,25 @@ const Navigation = ({
     <nav className="navigation">
       <div className="navigation__container container">
         <div className="navigation__inner">
-        <ul className="navigation__left">
-          <li className="navigation__title"><span role="img">🇺🇸</span></li>
-        </ul>
+          <ul className="navigation__left">
+            <li className="navigation__title" aria-label="American Flag">
+              <AmericanFlag />
+            </li>
+          </ul>
 
-        <ul className="navigation__right">
-          <li>
-            <span role="img">✅</span> {correctAnswers}
-          </li>
+          <ul className="navigation__right">
+            <li aria-label="Correct Answers">
+              <Check /> {correctAnswers}
+            </li>
 
-          <li>
-            <span role="img">❌</span> {incorrectAnswers}
-          </li>
-          <li>
-            <span role="img">⏲️</span> {questions.length - remainingQuestions}/{questions.length}
-          </li>
-        </ul>
+            <li aria-label="Incorrect Answers">
+              <Cross /> {incorrectAnswers}
+            </li>
+            <li aria-label="Questions Remaining">
+              <QuestionMark /> {questions.length - remainingQuestions}/
+              {questions.length}
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

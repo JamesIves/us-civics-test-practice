@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: var(--size-48);
+    padding-bottom: var(--size-18);
 }
 
 .footer__left, .footer__right {
