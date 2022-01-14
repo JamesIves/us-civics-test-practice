@@ -42,7 +42,7 @@ export const questions: QuestionType[] = [
   {
     question: "How many amendments does the Constitution have?",
     answers: [
-      "twenty-sevel (27)"
+      "twenty-seven (27)"
     ]
   },
   {
