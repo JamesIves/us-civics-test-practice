@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/us-civics-test-practice/static/css/main.29b3ffe4.css",
-    "main.js": "/us-civics-test-practice/static/js/main.409a2adb.js",
+    "main.css": "/us-civics-test-practice/static/css/main.7b518a9d.css",
+    "main.js": "/us-civics-test-practice/static/js/main.d83f9a1a.js",
     "static/js/787.5eef656d.chunk.js": "/us-civics-test-practice/static/js/787.5eef656d.chunk.js",
     "static/media/icon.png": "/us-civics-test-practice/static/media/icon.74b96b39c326daf6f626.png",
     "index.html": "/us-civics-test-practice/index.html",
-    "main.29b3ffe4.css.map": "/us-civics-test-practice/static/css/main.29b3ffe4.css.map",
-    "main.409a2adb.js.map": "/us-civics-test-practice/static/js/main.409a2adb.js.map",
+    "main.7b518a9d.css.map": "/us-civics-test-practice/static/css/main.7b518a9d.css.map",
+    "main.d83f9a1a.js.map": "/us-civics-test-practice/static/js/main.d83f9a1a.js.map",
     "787.5eef656d.chunk.js.map": "/us-civics-test-practice/static/js/787.5eef656d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29b3ffe4.css",
-    "static/js/main.409a2adb.js"
+    "static/css/main.7b518a9d.css",
+    "static/js/main.d83f9a1a.js"
   ]
 }
