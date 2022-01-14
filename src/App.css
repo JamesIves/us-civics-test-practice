@@ -15,6 +15,14 @@
     --size-4: 4px;
 }
 
+@media only screen and (max-width: 600px) {
+    :root {
+        --size-52: 42px;
+        --size-48: 38px;
+        --size-36: 26px;
+    }
+  }
+
 body {
     color: var(--color-black);
     background-color: var(--color-beige);
