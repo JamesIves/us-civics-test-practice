@@ -7,4 +7,4 @@ Questionaire to help you practice for the United States Civics Test. Based on do
 - `yarn install`
 - `yarn start`
 - `yarn lint:format`
-- Deployed with GitHub Actions
+- Deployed with GitHub Actions automatically.
