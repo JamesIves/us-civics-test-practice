@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/us-civics-test-practice/static/css/main.efc42cb3.css",
+    "main.css": "/us-civics-test-practice/static/css/main.752540e4.css",
     "main.js": "/us-civics-test-practice/static/js/main.4eeea0a3.js",
     "static/js/787.5eef656d.chunk.js": "/us-civics-test-practice/static/js/787.5eef656d.chunk.js",
     "static/media/icon.png": "/us-civics-test-practice/static/media/icon.74b96b39c326daf6f626.png",
     "index.html": "/us-civics-test-practice/index.html",
-    "main.efc42cb3.css.map": "/us-civics-test-practice/static/css/main.efc42cb3.css.map",
+    "main.752540e4.css.map": "/us-civics-test-practice/static/css/main.752540e4.css.map",
     "main.4eeea0a3.js.map": "/us-civics-test-practice/static/js/main.4eeea0a3.js.map",
     "787.5eef656d.chunk.js.map": "/us-civics-test-practice/static/js/787.5eef656d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efc42cb3.css",
+    "static/css/main.752540e4.css",
     "static/js/main.4eeea0a3.js"
   ]
 }
