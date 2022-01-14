@@ -112,7 +112,7 @@ const Questionaire = ({
           <section>
             {showResultsButtons && (
               <div className="followup">
-                <h2>Did you get the answer correct?</h2>
+                <h2>Did you answer correctly?</h2>
                 <div className="followup__button">
                   <button
                     className="button button--left"
