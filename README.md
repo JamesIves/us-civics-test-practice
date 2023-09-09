@@ -3,7 +3,7 @@
 Questionnaire to help you practice for the United States Civics Test, built with client-side React. [If you just want to start practicing, click here](https://jives.dev/us-civics-test-practice/).
 
 > **Warning**
-> I created this to help myself practice for my civics test in 2022. It is based on documentation provided by USCIS from that year, and may no longer be relevant.
+> I created this to help myself practice for my civics test in 2022. It is based on documentation provided by USCIS from that year, and may no longer be relevant depending on when you take the test. 
 
 ## Getting Started ✈️
 
